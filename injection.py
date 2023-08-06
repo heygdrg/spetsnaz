@@ -20,14 +20,9 @@ def check_if_same():
     _CONTENT_ = get_script().splitlines()[0]
     
     if _CONTENT_ == CONTENT:
-        
-        print('pass')
-        print(_CONTENT_)
-        print(CONTENT)
         pass
     
     else:
-        print('change -> UPLOADING NEW FILE')
         main()
 
 def get_script():
