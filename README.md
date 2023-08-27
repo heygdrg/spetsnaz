@@ -12,5 +12,7 @@ and the new code will be automaticly upload ti the victim pc
 rn it only work on window but it will be soon available for linux also
 remember that this is the first version of this project it will be upgrade as soon as I can
 
+the spyware is still in dev you only can grab chrome browser password but they will be hash and encrypt
+
 hope it will pleased you
 
